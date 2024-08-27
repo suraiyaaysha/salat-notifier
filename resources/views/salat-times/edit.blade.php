@@ -8,11 +8,12 @@
     <form action="{{ route('salat-times.update', $salatTime) }}" method="POST">
         @csrf
         @method('PUT')
+        
         <label for="prayer">Prayer:</label>
-        <input type="text" id="prayer" name="prayer" value="{{ $salatTime->prayer }}" required>
+        <input type="text" id="prayer" name="prayer" value="{{ old('prayer', $salatTime->prayer) }}" required>
         <br>
         <label for="time">Time:</label>
-        <input type="text" id="time" name="time" value="{{ $salatTime->time }}" required placeholder="HH:MM">
+        <input type="time" id="time" name="time" value="{{ old('time', $salatTime->time) }}" required>
         <br>
         <button type="submit">Update</button>
     </form>

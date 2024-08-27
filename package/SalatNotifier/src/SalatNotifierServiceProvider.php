@@ -24,7 +24,5 @@ class SalatNotifierServiceProvider extends ServiceProvider
         // Load migrations
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
-        // Load and publish routes, if any
-        // $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
 }

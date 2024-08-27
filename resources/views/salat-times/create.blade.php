@@ -11,7 +11,7 @@
         <input type="text" id="prayer" name="prayer" required>
         <br>
         <label for="time">Time:</label>
-        <input type="text" id="time" name="time" required placeholder="HH:MM">
+        <input type="time" id="time" name="time" required placeholder="HH:MM AM">
         <br>
         <button type="submit">Add</button>
     </form>

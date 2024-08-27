@@ -25,7 +25,6 @@ class SalatTimeController extends Controller
             'time' => 'required|date_format:H:i',
         ]);
     
-        // Debugging: Check if the request data is correct
         // dd($request->all());
     
         SalatTime::create($request->all());
@@ -47,6 +46,7 @@ class SalatTimeController extends Controller
             'time' => 'required|date_format:H:i',
         ]);
 
+        // dd($request->all());
         $salatTime->update($request->all());
 
         return redirect()->route('salat-times.index')
