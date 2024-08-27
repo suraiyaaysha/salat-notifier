@@ -1,0 +1,18 @@
+{
+    "name": "suraiya/salat-notifier",
+    "description": "A Laravel package for managing and notifying Salat (prayer) times.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "SalatNotifier\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SalatNotifier\\SalatNotifierServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
